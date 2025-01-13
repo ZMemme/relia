@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Leitura Acessível a Todos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+            /* Azul clarinho */
+            color: #1e3a8a;
+            /* Azul escuro morto */
+        }
+
+        header {
+            background-color: #003366;
+            /* Azul mais escuro */
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 105px;
+            margin-right: 105px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: -80px;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            transition: color 0.3s, transform 0.3s;
+            /* Adiciona a transição suave */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        nav ul li+li:before {
+            content: '';
+            height: 20px;
+            border-left: 1px solid white;
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 22px;
+            transition: color 0.3s, transform 0.3s, font-size 0.3s;
+        }
+
+        nav ul li a:hover {
+            color:#ccb90a;
+            transform: scale(1.2);
+            font-size: 24px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #003366;
+            /* Azul escuro */
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .language-selector {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 20px;
+        }
+
+        .language-selector a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .language-selector a:hover {
+            text-decoration: underline;
+        }
+
+        .language-selector a.active {
+            font-weight: bold;
+            color: #ccb90a;
+        }   
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo/RELIA_branco.png" alt="Logo RELIA">
+            <h1>Reading Accessible To All</h1>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="index_en.html">Home</a></li>
+                    <li><a href="about_en.html">About</a></li>
+                    <li><a href="podcast_en.html">Podcast</a></li>
+                    <li><a href="contacts_en.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <a href="podcast_en.html" class="active">EN</a> | <a href="podcast.html">PT</a>
+            </div>
+        </div>
+    </header>
+        <div class="container">
+            <section id="episodios">
+                <h2 class="section-title">Podcast Episodes</h2>
+                <p>We want you to be part of RELIA. For that we created the podcast "Reading with RELIA", where each month we will invite a user to share their experience with the app. If you want to share your experience with us, contact us through our email: info@relia.pt</p>
+                <article class="section-content">
+                    <h3>Episode 1: Invisible Cities, Italo Calvino</h3>
+                    <p>In the first episode we make a short introduction to RELIA and hear about João's experience with the app!</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0TqIN4IkpyNUgXZYRtyiY8?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </article>
+                <article class="section-content">
+                    <h3>Episode 2:</h3>
+                    <p>Soon!</p>
+                </article>
+                <article class="section-content">
+                    <h3>Episode 3:</h3>
+                    <p>Soon!</p>
+                </article>
+            </section>
+        </div>
+        <footer>
+            <p>© 2025 RELIA. All rights reserved.</p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Leitura Acessível a Todos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+            /* Azul clarinho */
+            color: #1e3a8a;
+            /* Azul escuro morto */
+        }
+
+        header {
+            background-color: #003366;
+            /* Azul mais escuro */
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 105px;
+            margin-right: 105px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: -80px;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            transition: color 0.3s, transform 0.3s;
+            /* Adiciona a transição suave */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        nav ul li+li:before {
+            content: '';
+            height: 20px;
+            border-left: 1px solid white;
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 22px;
+            transition: color 0.3s, transform 0.3s, font-size 0.3s;
+        }
+
+        nav ul li a:hover {
+            color:#ccb90a;
+            transform: scale(1.2);
+            font-size: 24px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #003366;
+            /* Azul escuro */
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .language-selector {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 20px;
+        }
+
+        .language-selector a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .language-selector a:hover {
+            text-decoration: underline;
+        }
+
+        .language-selector a.active {
+            font-weight: bold;
+            color: #ccb90a;
+        }
+        .dropdown {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .dropdown-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #ffffff;
+            background-color: #003366;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .dropdown-button:hover {
+            background-color: #0055a5;
+        }
+        .dropdown-content {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .dropdown-content img {
+            max-width: 70%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo/RELIA_branco.png" alt="Logo RELIA">
+            <h1>Reading Accessible To All</h1>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="index_en.html">Home</a></li>
+                    <li><a href="about_en.html">About</a></li>
+                    <li><a href="podcast_en.html">Podcast</a></li>
+                    <li><a href="contacts_en.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <a href="about_en.html" class="active">EN</a> | <a href="about.html">PT</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="introducao">
+            <h2>What is RELIA?</h2>
+            <p>RELIA is an innovative conversational AI tool designed to transform the reading and learning experience. Created to address the challenges imposed by disadvantaged socioeconomic contexts, RELIA's mission is to promote educational inclusion by providing a reflective and accessible experience for all users.</p>
+        </section>
+        <section id="missao-visao">
+            <h2>Problem and Solution</h2>
+            <p>The origin of RELIA stems from the response to the question: Do the socioeconomic contexts of each individual affect their literary education, or more specifically, the lack thereof? The answer is a resounding yes, highlighting a problem to be solved.</p>
+            <p>From the need for a solution, RELIA was born—a conversational AI tool with the main goal of guiding users through the reading and learning processes of a literary work. RELIA's primary objective is to promote educational inclusion by providing an accessible, reflective, and enriching reading experience, regardless of users' socioeconomic background.</p>
+        </section>
+        <section id="funcionalidades">
+            <h2>Features</h2>
+            <p><strong>Choice of Work</strong>: RELIA offers a vast selection of literary works at the user's disposal, accompanied by predefined themes such as characters, historical context, and stylistic aspects. These themes serve as initial guides to "break the ice" and help orient the user during their reading and learning process.</p>
+            <p><strong>Socratic Dialogue</strong>: The learning process is based on a Socratic dialogue between RELIA and the user. This method promotes dynamic, reflective interaction, helping to develop critical thinking skills. RELIA adapts to the user's needs, able to engage in different languages and registers, ensuring the experience is accessible and personalized.</p>
+            <p><strong>Point of Reflection</strong>: After exploring the work, the user is challenged with the Reflection Point, where they answer critical questions about the work. This process includes an evaluation that provides suggestions for improvement and encourages continuous progress.</p>
+            <p><strong>Nothing is Lost</strong>: With RELIA, nothing is lost. All conversations about different works, as well as Points of Reflection and evaluations, are stored in the system. This allows the user to create a dossier that tracks and follows their progress over time.</p>
+        </section>
+        <section id="impactosbeneficios">
+            <h2>Impacts e Beneficts</h2>
+            <p>RELIA promotes reflective analysis and critical thinking, essential skills for academic success and active citizenship. As Linda M. Murawski highlights, these skills are indispensable for forming autonomous citizens who can make informed decisions and face life’s challenges. Additionally, RELIA gathers educational data, enabling continuous improvement of the learning process, benefiting both users and educators.</p>
+        </section>
+    </div>
+    <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown()">Show Infographic</button>
+        <div class="dropdown-content" id="dropdownContent">
+            <img src="infografia/RELIA English.png" alt="Infografia RELIA">
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            var content = document.getElementById('dropdownContent');
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+    </script>
+
+    <footer>
+        <p>© 2025 RELIA. All rights reserved.</p>
+    </footer>
+</body>
+</html>
